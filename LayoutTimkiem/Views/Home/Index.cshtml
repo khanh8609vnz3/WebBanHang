@@ -1,0 +1,118 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    select {
+    max-width: 300px;
+}
+    .link{
+        text-decoration:none;
+        color:hotpink;
+    }
+    .button {
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: hotpink;
+  border: none;
+}
+
+.button:hover {background-color: deeppink}
+
+.button:active {
+  background-color: deeppink;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    p { 
+        border-top: 2px solid #222222;
+    }
+    h1, .h1 {
+    font-size: 17px;
+    }
+</style>
+
+<div id='ads-left'>
+    <div style='background-color:aqua; margin:100px 0 5px 0; padding:0;width:270px;height:300px;position:fixed; left:0; top:0;'>
+        <i class="fa fa-star"><b style="text-align:center"> DÀNH CHO QUẢNG CÁO</b></i>
+    </div>
+</div>
+<div id='ads-right'>
+    <div style='background-color:aqua; margin:100px 0 5px 0; padding:0;width:270px;height:300px;position:fixed; right:0; top:0;'>
+        <i class="fa fa-star"><b style="text-align:center"> MẸO TÌM KIẾM</b></i>
+    </div>
+</div>
+<div class="form-group" style="margin-left:270px; margin-top:50px; width:600px; border:1px double hotpink; border-radius:5px;background-color:#ffffff">
+    <table align="left">
+        <tr>
+            <td>
+                <span style="color:hotpink" class="glyphicon glyphicon-search"><b style="font-size:18px; color:hotpink"> HÃY TÌM NHANH</b> </span>
+            </td>          
+        </tr> 
+    </table>
+        <table align="center">
+            <tr>
+                <td><i style="color:hotpink" class="fa fa-heart-o"></i> Tôi là:</td>
+                <td>
+                    <select class="form-control" id="cgt" name="chonGioitinh">
+                        <option>Nam</option>
+                        <option>Nữ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td width="200px"><i style="color:hotpink" class="fa fa-heart-o"></i> Tôi đang muốn tìm</td>
+                <td align="left">Có tuổi</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="nam" value=""> Bạn nam
+                    <input type="checkbox" name="nu" value=""> Bạn nữ
+                </td>
+                <td align="left">
+                    <select style=" float:right" class="form-control" id="" name="">
+                        <option>18</option>
+                        <option>19</option>
+                    </select>
+                </td>
+                <td>Tới</td>
+                <td>
+                    <select class="form-control" id="" name="">
+                        <option>80</option>
+                        <option>79</option>
+                    </select>
+                </td>
+                <td>Tuổi</td>
+            </tr>
+            <tr>
+                <td>Có nơi sống tại</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select style="width:300px" class="form-control" id="" name="">
+                        <option>Tất cả</option>
+                        <option>TP.HCM</option>
+                    </select>
+                </td>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="" value=""> Có ảnh đại diện
+                </td>
+            </tr>
+            <tr style="height:40px">
+
+                <td colspan="5" align="center" style="height:50px">
+                    <input style="max-width:600px; width:500px" type="button" class="button" value="Tìm kiếm" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" align="left" style="height:50px">
+                    <p>Bạn muốn <b>TÌM KIẾM NÂNG CAO</b>? Hãy <a href="" class="link">CLICK ĐÂY!</a></p>
+                </td>
+            </tr>
+        </table>
+</div>
